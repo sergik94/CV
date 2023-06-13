@@ -1,7 +1,8 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import "./utils/_reset";
+@import "./utils/_mixins";
+@import "./utils/_vars";
+@import "./utils/_titles";
 
-body {
-  background: $c-gray;
-}
+@import "./blocks/page.scss";
+@import "./blocks/leftside.scss";
+@import "./blocks/rightside.scss";

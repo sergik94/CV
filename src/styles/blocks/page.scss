@@ -1,0 +1,29 @@
+.page {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #333;
+  scroll-behavior: smooth;
+
+  &__main {
+    display: flex;
+
+    @include onSmartphone {
+      flex-direction: column;
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: transform $trans-duration;
+
+    &:target {
+      transform: translateX(0%);
+    }
+  }
+}

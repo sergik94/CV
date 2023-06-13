@@ -1,0 +1,96 @@
+.rightside {
+  padding: 60px 50px 50px;
+
+  @include onSmartphone {
+    padding: 40px 30px 40px;
+  }
+
+  &__title {
+    color: $main-color;
+  }
+
+  &__subtitle {
+    margin-bottom: 83px;
+  }
+
+  &__title, &__subtitle {
+    @include onSmartphone {
+      display: none;
+    }
+  }
+
+  &__block-title {
+    margin-bottom: 22px;
+    color: $main-color;
+  }
+
+  &__block-subtitle {
+    margin-bottom: 16px;
+    margin-top: 22px;
+  }
+
+  &__block {
+    margin-bottom: 50px;
+  }
+
+  &__info-contant {
+    margin-bottom: 16px;
+  }
+
+  &__info-contant-title {
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  &__info-item {
+    padding-left: 15px;
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      width: 5px;
+      height: 5px;
+      background-color: $main-color;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 6px;
+    }
+  }
+
+  &__info-link {
+    color: blue;
+    text-decoration: underline;
+  }
+
+  &__buttons {
+    display: flex;
+    max-width: 550px;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+      height: 140px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 60px;
+    background-color: $main-color;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 20px;
+
+    &:hover {
+      border: 2px solid $main-color;
+      background-color: #fff;
+      color: $main-color;
+    }
+  }
+}
