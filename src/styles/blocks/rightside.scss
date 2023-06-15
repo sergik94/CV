@@ -2,7 +2,7 @@
   padding: 60px 50px 50px;
 
   @include onSmartphone {
-    padding: 40px 30px 40px;
+    padding: 40px 30px;
   }
 
   &__title {
@@ -13,7 +13,8 @@
     margin-bottom: 83px;
   }
 
-  &__title, &__subtitle {
+  &__title,
+  &__subtitle {
     @include onSmartphone {
       display: none;
     }
@@ -63,19 +64,20 @@
     text-decoration: underline;
   }
 
-  &__buttons {
-    display: flex;
-    max-width: 550px;
-    justify-content: space-between;
-    margin: 0 auto;
+  &__subblocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    margin-top: -22px;
+    margin-bottom: -16px;
 
-    @media (max-width: 900px) {
-      flex-direction: column;
-      height: 140px;
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
     }
   }
 
   &__button {
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;

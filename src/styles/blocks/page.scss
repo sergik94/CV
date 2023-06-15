@@ -14,16 +14,7 @@
     }
   }
 
-  &__menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    transform: translateX(-100%);
-    transition: transform $trans-duration;
-
-    &:target {
-      transform: translateX(0%);
-    }
+  &__leftside {
+    flex-shrink: 0.2;
   }
 }
