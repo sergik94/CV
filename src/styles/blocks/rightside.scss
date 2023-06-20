@@ -25,6 +25,12 @@
     color: $main-color;
   }
 
+  &__block-text {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
   &__block-subtitle {
     margin-bottom: 16px;
     margin-top: 22px;
@@ -47,7 +53,7 @@
     padding-left: 15px;
     position: relative;
     &::before {
-      content: '';
+      content: "";
       display: block;
       width: 5px;
       height: 5px;
