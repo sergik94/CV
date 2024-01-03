@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "source": "src/index.html",
+  "homepage": "https://sergik94.github.io/cv/",
   "scripts": {
     "start": "parcel --open",
+    "deploy": "gh-pages -d dist",
     "build": "parcel build"
   },
   "author": "",
