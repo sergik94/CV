@@ -7,7 +7,7 @@
   "scripts": {
     "start": "parcel --open",
     "deploy": "gh-pages -d dist",
-    "build": "parcel build"
+    "build": "parcel build --public-url ./"
   },
   "author": "",
   "license": "ISC",
